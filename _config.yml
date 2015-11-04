@@ -9,9 +9,7 @@
 title: Lvcy's Blog
 email: 757104454@qq.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  关注美女和程序设计
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lvchenyang.github.io" # the base hostname & protocol for your site
 twitter_username: null
