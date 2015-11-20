@@ -13,7 +13,7 @@ tags: spark configuration 配置 参数
 
 
 
-<table>
+<table border="1">
 	<tr>
 		<td colspan="3">
 			<h3> Available Properties </h3>
@@ -121,12 +121,12 @@ tags: spark configuration 配置 参数
 		<td>Set the strategy of rolling of executor logs. By default it is disabled. It can be set to "time" (time-based rolling) or "size" (size-based rolling). For "time", use spark.executor.logs.rolling.time.interval to set the rolling interval. For "size", use spark.executor.logs.rolling.size.maxBytes to set the maximum file size for rolling.</td>
 	</tr>
 	<tr>
-		<td>spark.executor.logs.rolling.time.interval</td>
+		<td><code>spark.executor.logs.rolling.time.interval</code></td>
 		<td>daily</td>
 		<td>Set the time interval by which the executor logs will be rolled over. Rolling is disabled by default. Valid values are `daily`, `hourly`, `minutely` or any interval in seconds. See spark.executor.logs.rolling.maxRetainedFiles for automatic cleaning of old logs.</td>
 	</td>
 	<tr>
-		<td>spark.executor.userClassPathFirst</td>
+		<td><code>spark.executor.userClassPathFirst</code></td>
 		<td>false</td>
 		<td>（试验性的）和spark.driver.userClassPathFirst功能差不多，不过次属性值针对executor</td>
 	</tr>
@@ -136,22 +136,22 @@ tags: spark configuration 配置 参数
 		<td>通过EnvironmentVariableName来添加指定的环境变量到executor process中，用户可以通过这个property来设置多个环境变量</td>
 	</tr>
 	<tr>
-		<td>spark.python.profile</td>
+		<td><code>spark.python.profile</code></td>
 		<td>false</td>
 		<td>Enable profiling in Python worker, the profile result will show up by `sc.show_profiles()`, or it will be displayed before the driver exiting. It also can be dumped into disk by `sc.dump_profiles(path)`. If some of the profile results had been displayed manually, they will not be displayed automatically before driver exiting. By default the `pyspark.profiler.BasicProfiler` will be used, but this can be overridden by passing a profiler class in as a parameter to the `SparkContext` constructor.</td>
 	</tr>
 	<tr>
-		<td>spark.python.profile.dump</td>
+		<td><code>spark.python.profile.dump</code></td>
 		<td>(nonde)</td>
 		<td>The directory which is used to dump the profile result before driver exiting. The results will be dumped as separated file for each RDD. They can be loaded by ptats.Stats(). If this is specified, the profile result will not be displayed automatically.</td>
 	<tr>
 	<tr>
-		<td>spark.python.memory</td>
+		<td><code>spark.python.memory</code></td>
 		<td>512m</td>
 		<td>Amount of memory to use per python worker process during aggregation, in the same format as JVM memory strings (e.g. 512m, 2g). If the memory used during aggregation goes above this amount, it will spill the data into disks.</td>
 	<tr/>
 	<tr>
-		<td>spark.python.worker.reuse</td>
+		<td><code>spark.python.worker.reuse</code></td>
 		<td>true</td>
 		<td>Reuse Python worker or not. If yes, it will use a fixed number of Python workers, does not need to fork() a Python process for every tasks. It will be very useful if there is large broadcast, then the broadcast will not be needed to transfered from JVM to Python worker for every task.</td>
 	</tr>
