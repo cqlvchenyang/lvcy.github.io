@@ -7,6 +7,7 @@
 
 # Site settings
 title: Lvcy's Blog
+header-img: img/home-bg.jpg
 email: 757104454@qq.com
 description: > # this means to ignore newlines until "baseurl:"
   关注美女和程序设计
@@ -14,6 +15,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lvchenyang.github.io" # the base hostname & protocol for your site
 twitter_username: null
 github_username:  lvchenyang
-
+facebook_username:  IronSummitMedia
 # Build settings
 markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
