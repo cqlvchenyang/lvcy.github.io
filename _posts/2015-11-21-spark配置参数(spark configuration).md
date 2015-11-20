@@ -13,7 +13,7 @@ tags: spark configuration 配置 参数
 
 
 
-<table border="1">
+<table style="border:solid 1px sliver">
 	<tr>
 		<td colspan="3">
 			<h3> Available Properties </h3>
