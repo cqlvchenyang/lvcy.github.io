@@ -3,15 +3,19 @@ layout: post
 title: "Spark 配置参数(Sprak Configuration)"
 date: 2015-11-21
 categories: spark
-tags:spark configuration 配置 参数
+tags: spark configuration 配置 参数
 ---
 
-Spark 配置参数(Sprak Configuration)
-======
+
+
+# Spark 配置参数(Sprak Configuration)
+
+
+
 
 <table>
 	<tr>
-		<td colspan=3>
+		<td colspan="3">
 			<h3> Available Properties </h3>
 		</td>
 	</tr>
@@ -65,7 +69,7 @@ Spark 配置参数(Sprak Configuration)
 	</tr>
 	
 
-	<tr><td colspan=3><h3>Runtime Environment</h3></td></tr>
+	<tr><td colspan="3"><h3>Runtime Environment</h3></td></tr>
 	<tr>
 		<td>Property Name</td>
 		<td>默认值</td>
