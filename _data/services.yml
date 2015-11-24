@@ -1,0 +1,17 @@
+- menu_name: "Services"
+
+- name: "关于我"
+  url: "/contact/"
+  title: "关于我"
+
+- name: "RSS订阅"
+  url: "/feed.xml"
+  title: "RSS订阅"
+
+- name: "Atom"
+  url: "/atom.xml"
+  title: "Subscribe to Atom Feed"
+
+- name: "站点地图"
+  url: "/sitemap.xml"
+  title: "站点地图"
